@@ -4,8 +4,8 @@ from collections import Counter  # importing the dict subclass Counter to count 
 
 def matchingSocks(n, ar):
 
-    dictionary = Counter(ar)  # using the Counter which will store the colors as keys and their counts as values in a dictionary
-    count = dictionary.values()  # count is the number of times each color appears in the array
+    dictionary = Counter(ar)  # using Counter which will store the colors as keys and their counts as values in a dictionary
+    count = dictionary.values()  # count is a list of the number of times each color appears in the array
     pairs = 0
 
     for x in count:  # let the value in the dictionary be x
